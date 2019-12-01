@@ -1,12 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1961280-9ed4-4a91-8a18-ce11994ea522" name="Default Changelist" comment="" />
+    <list default="true" id="f1961280-9ed4-4a91-8a18-ce11994ea522" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_01/ClientHandler1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_01/ClientHandler2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_01/ServerHandler1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_01/ServerHandler2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_01/TimeClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_01/TimeServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/Msg2MsgDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/Msg2MsgEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/_01timeserver/TimeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/oldcode/_01timeserver/TimeClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/_01timeserver/TimeClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/oldcode/_01timeserver/TimeClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/_01timeserver/TimeServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/oldcode/_01timeserver/TimeServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/_01timeserver/TimeServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/oldcode/_01timeserver/TimeServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/_02tcp_packet_splicing/TimeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/oldcode/_02tcp_packet_splicing/TimeClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/_02tcp_packet_splicing/TimeClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/oldcode/_02tcp_packet_splicing/TimeClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/_02tcp_packet_splicing/TimeServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/oldcode/_02tcp_packet_splicing/TimeServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/_02tcp_packet_splicing/TimeServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/oldcode/_02tcp_packet_splicing/TimeServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/_03delimiter_based_frame_decoder/TimeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/oldcode/_03delimiter_based_frame_decoder/TimeClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/_03delimiter_based_frame_decoder/TimeClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/oldcode/_03delimiter_based_frame_decoder/TimeClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/_03delimiter_based_frame_decoder/TimeServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/oldcode/_03delimiter_based_frame_decoder/TimeServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/_03delimiter_based_frame_decoder/TimeServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/oldcode/_03delimiter_based_frame_decoder/TimeServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/_04fixed_length_frame_decoder/TimeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/oldcode/_04fixed_length_frame_decoder/TimeClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/_04fixed_length_frame_decoder/TimeClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/oldcode/_04fixed_length_frame_decoder/TimeClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/_04fixed_length_frame_decoder/TimeServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/oldcode/_04fixed_length_frame_decoder/TimeServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/_04fixed_length_frame_decoder/TimeServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/oldcode/_04fixed_length_frame_decoder/TimeServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_01timeserver/TimeClient$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_01timeserver/TimeClient$ChildChannelHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_01timeserver/TimeClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_01timeserver/TimeClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_01timeserver/TimeServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_01timeserver/TimeServer$ChildChannelHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_01timeserver/TimeServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_01timeserver/TimeServerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_02tcp_packet_splicing/TimeClient$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_02tcp_packet_splicing/TimeClient$ChildChannelHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_02tcp_packet_splicing/TimeClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_02tcp_packet_splicing/TimeClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_02tcp_packet_splicing/TimeServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_02tcp_packet_splicing/TimeServer$ChildChannelHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_02tcp_packet_splicing/TimeServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_02tcp_packet_splicing/TimeServerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_03delimiter_based_frame_decoder/TimeClient$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_03delimiter_based_frame_decoder/TimeClient$ChildChannelHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_03delimiter_based_frame_decoder/TimeClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_03delimiter_based_frame_decoder/TimeClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_03delimiter_based_frame_decoder/TimeServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_03delimiter_based_frame_decoder/TimeServer$ChildChannelHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_03delimiter_based_frame_decoder/TimeServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_03delimiter_based_frame_decoder/TimeServerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_04fixed_length_frame_decoder/TimeClient$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_04fixed_length_frame_decoder/TimeClient$ChildChannelHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_04fixed_length_frame_decoder/TimeClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_04fixed_length_frame_decoder/TimeClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_04fixed_length_frame_decoder/TimeServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_04fixed_length_frame_decoder/TimeServer$ChildChannelHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_04fixed_length_frame_decoder/TimeServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/_04fixed_length_frame_decoder/TimeServerHandler.class" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -21,11 +94,23 @@
     </option>
   </component>
   <component name="ProjectId" id="1UMggkbSEKbIZZpJAE3CGuqTunl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wb.newcode._01" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/wb/newcode/_01" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -39,13 +124,78 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TimeServer">
-    <configuration name="TimeClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wb._02tcp_packet_splicing.TimeClient" />
+  <component name="RunManager" selected="Application.TimeServer (2)">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.newcode._02_msg2msgdcode.Client" />
       <module name="netty" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wb._02tcp_packet_splicing.*" />
+          <option name="PATTERN" value="com.wb.newcode._02_msg2msgdcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.newcode._02_msg2msgdcode.Server" />
+      <module name="netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wb.newcode._02_msg2msgdcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeClient (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.oldcode._01timeserver.TimeClient" />
+      <module name="netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wb.oldcode._01timeserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.newcode._01.TimeClient" />
+      <module name="netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wb.newcode._01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.oldcode._01timeserver.TimeServer" />
+      <module name="netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wb.oldcode._01timeserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeServer (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.newcode._01.TimeServer" />
+      <module name="netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wb.newcode._01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -54,11 +204,11 @@
       </method>
     </configuration>
     <configuration name="TimeServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wb._02tcp_packet_splicing.TimeServer" />
+      <option name="MAIN_CLASS_NAME" value="com.wb.newcode._01.TimeServer" />
       <module name="netty" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wb._02tcp_packet_splicing.*" />
+          <option name="PATTERN" value="com.wb.newcode._01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,8 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TimeServer" />
-        <item itemvalue="Application.TimeClient" />
+        <item itemvalue="Application.TimeServer (2)" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.TimeClient (1)" />
+        <item itemvalue="Application.TimeServer (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -85,5 +238,52 @@
       <updated>1575171991827</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/Msg2MsgDecoder.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/Msg2MsgDecoder.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/Msg2MsgEncoder.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/Msg2MsgEncoder.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/oldcode/_01timeserver/TimeServerHandler.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/oldcode/_01timeserver/TimeClientHandler.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
