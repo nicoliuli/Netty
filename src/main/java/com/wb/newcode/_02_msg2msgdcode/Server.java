@@ -10,6 +10,8 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
+import java.util.Date;
+
 public class Server {
     public void bind(int port) throws Exception{
         //1
@@ -41,8 +43,13 @@ public class Server {
     }
 
     public static void main(String[] args) throws Exception {
-        int port = 8080;
+        /*int port = 8080;
         //
-        new Server().bind(port);
+        new Server().bind(port);*/
+
+        long a = new Date().getTime() - 1573704952000L;
+
+        System.out.println(a/3600/24/1000);
+        System.out.println(new Date().getTime());
     }
 }
