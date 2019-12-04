@@ -119,6 +119,6 @@ public class NioWebSocketHandler extends SimpleChannelInboundHandler<Object> {
                 f.addListener(ChannelFutureListener.CLOSE);
             }
         }
-        
+
 
 }
