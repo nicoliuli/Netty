@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1961280-9ed4-4a91-8a18-ce11994ea522" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocket/ChannelSupervise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocket/NioWebSocketHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocket/NioWebSocketServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocket/a.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_01/TimeServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_01/TimeServer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_01/TimeServer$ChildChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_01/TimeServer$ChildChannelHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_01/TimeServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_01/TimeServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_msg2msgdcode/Server$ChildChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_msg2msgdcode/Server$ChildChannelHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_msg2msgdcode/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_msg2msgdcode/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocket/NioWebSocketHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocket/NioWebSocketHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocket/a.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocket/a.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/websocket/NioWebSocketHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/websocket/NioWebSocketHandler.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

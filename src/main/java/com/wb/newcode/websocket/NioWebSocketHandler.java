@@ -19,13 +19,16 @@ public class NioWebSocketHandler extends SimpleChannelInboundHandler<Object> {
 
         private WebSocketServerHandshaker handshaker;
 
-        protected void channelRead0(ChannelHandlerContext ctx, Object msg) throws Exception {
+        @Override
+        public void messageReceived(ChannelHandlerContext ctx, Object msg) throws Exception {
 
             if (msg instanceof FullHttpRequest){
                 //以http请求形式接入，但是走的是websocket
+                System.out.println("以http请求形式接入，但是走的是websocket");
                 handleHttpRequest(ctx, (FullHttpRequest) msg);
             }else if (msg instanceof WebSocketFrame){
                 //处理websocket客户端的消息
+                System.out.println("处理websocket客户端的消息");
                 handlerWebSocketFrame(ctx, (WebSocketFrame) msg);
             }
         }
@@ -116,10 +119,6 @@ public class NioWebSocketHandler extends SimpleChannelInboundHandler<Object> {
                 f.addListener(ChannelFutureListener.CLOSE);
             }
         }
-
-    @Override
-    protected void messageReceived(ChannelHandlerContext channelHandlerContext, Object o) throws Exception {
-
-    }
+        
 
 }
