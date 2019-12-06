@@ -6,6 +6,8 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
+import java.util.Date;
+
 public class TimeServer {
     public void bind(int port) throws Exception{
         //1
@@ -37,8 +39,10 @@ public class TimeServer {
     }
 
     public static void main(String[] args) throws Exception {
-        int port = 8080;
-        //
-        new TimeServer().bind(port);
+//        int port = 8080;
+//        //
+//        new TimeServer().bind(port);
+        System.out.println(new Date().getTime());
+        System.out.println((System.currentTimeMillis() - 1575605980000L) / (1000 * 3600));
     }
 }
