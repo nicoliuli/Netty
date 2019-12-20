@@ -1,27 +1,19 @@
 package com.wb.newcode.websocketimooc;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class User {
-    private int id;
-    private String name;
+    List l = new ArrayList();
+    Integer a =1;
+    Long b = 999999999999999999L;
+    long c = 999999999999999999L;
+    byte cd;
+    private User u = new User();
+    Map map = new HashMap(100);
 
 
-    public int getId() {
-        System.out.println("getId");
-        return id;
-    }
 
-    public void setId(int id) {
-        System.out.println("setId");
-        this.id = id;
-    }
-
-    public String getName() {
-        System.out.println("getName");
-        return name;
-    }
-
-    public void setName(String name) {
-        System.out.println("setName");
-        this.name = name;
-    }
 }

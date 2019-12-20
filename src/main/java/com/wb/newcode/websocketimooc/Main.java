@@ -7,6 +7,7 @@ import io.netty.channel.ChannelFuture;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import org.openjdk.jol.info.ClassLayout;
 
 /**
  * 程序的入口，负责启动应用
@@ -36,12 +37,8 @@ public class Main {
 //			workGroup.shutdownGracefully();
 //		}
 
-		User u = new User();
-		u.setId(1);
-		u.setName("aaa");
-
-		String user = JSON.toJSONString(u);
-		User u1 = JSON.parseObject(user,User.class);
+	//	System.out.println(VM.current().details());
+		System.out.println(ClassLayout.parseClass(ChatMsg.class).toPrintable());
 
 	}
 }
