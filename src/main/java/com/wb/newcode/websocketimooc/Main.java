@@ -16,29 +16,28 @@ import org.openjdk.jol.info.ClassLayout;
  */
 public class Main {
 	public static void main(String[] args) {
-//		EventLoopGroup bossGroup = new NioEventLoopGroup();
-//		EventLoopGroup workGroup = new NioEventLoopGroup();
-//		try {
-//			ServerBootstrap b = new ServerBootstrap();
-//			b.group(bossGroup, workGroup);
-//			b.channel(NioServerSocketChannel.class);
-//			b.childHandler(new MyWebSocketChannelHandler());
-//			System.out.println("服务端开启等待客户端连接....");
-//		//	b.bind(8888).sync();
-//			ChannelFuture channelFuture = b.bind(8888).sync();
-//			Channel channel = channelFuture.channel();
-//			channel.closeFuture().sync();
-//
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}finally{
-//			//优雅的退出程序
-//			bossGroup.shutdownGracefully();
-//			workGroup.shutdownGracefully();
-//		}
 
-	//	System.out.println(VM.current().details());
-		System.out.println(ClassLayout.parseClass(ChatMsg.class).toPrintable());
+
+		EventLoopGroup bossGroup = new NioEventLoopGroup();
+		EventLoopGroup workGroup = new NioEventLoopGroup();
+		try {
+			ServerBootstrap b = new ServerBootstrap();
+			b.group(bossGroup, workGroup);
+			b.channel(NioServerSocketChannel.class);
+			b.childHandler(new MyWebSocketChannelHandler());
+			System.out.println("服务端开启等待客户端连接....");
+			b.bind(20880).sync();
+			ChannelFuture channelFuture = b.bind(8888).sync();
+			Channel channel = channelFuture.channel();
+			channel.closeFuture().sync();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally{
+			//优雅的退出程序
+			bossGroup.shutdownGracefully();
+			workGroup.shutdownGracefully();
+		}
 
 	}
 }

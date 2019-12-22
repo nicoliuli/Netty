@@ -1,4 +1,4 @@
-package com.wb.newcode._02_msg2msgdcode.pojo;
+package com.wb.newcode._02_test.pojo;
 
 public class User {
     public  Integer id = 1;

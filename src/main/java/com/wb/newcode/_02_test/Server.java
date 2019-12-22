@@ -1,6 +1,6 @@
-package com.wb.newcode._02_msg2msgdcode;
+package com.wb.newcode._02_test;
 
-import com.wb.newcode._01.ServerHandler1;
+import com.wb.newcode._02_test.inbound.*;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -9,8 +9,6 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-
-import java.util.Date;
 
 public class Server {
     public void bind(int port) throws Exception{
@@ -38,18 +36,13 @@ public class Server {
     private class ChildChannelHandler extends ChannelInitializer<SocketChannel>{
 
         protected void initChannel(SocketChannel socketChannel) throws Exception {
-            socketChannel.pipeline().addLast(new Msg2MsgDecoder());
+            socketChannel.pipeline().addLast(new InboundHandler1()).addLast(new InBoundHandler2()).addLast(new InboundHandler3());
         }
     }
 
     public static void main(String[] args) throws Exception {
-        /*int port = 8080;
-        //
-        new Server().bind(port);*/
+        int port = 8080;
 
-        long a = new Date().getTime() - 1573704952000L;
-
-        System.out.println(a/3600/24/1000);
-        System.out.println(new Date().getTime());
+        new Server().bind(port);
     }
 }

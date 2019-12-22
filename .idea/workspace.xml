@@ -2,13 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1961280-9ed4-4a91-8a18-ce11994ea522" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/ChatMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_test/inbound/InBoundHandler2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_test/inbound/InboundHandler1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_test/inbound/InboundHandler3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_test/outbound/OutBoundHandler2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_test/outbound/OutboundHandler1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_test/outbound/OutboundHandler3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_test/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/Msg2MsgDecoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/Msg2MsgEncoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_test/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_test/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/ChatMsg.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/websocket.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/websocket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_msg2msgdcode/Client$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_msg2msgdcode/Client$ChildChannelHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_msg2msgdcode/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_msg2msgdcode/Msg2MsgDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_msg2msgdcode/Msg2MsgEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_msg2msgdcode/Server$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_msg2msgdcode/Server$ChildChannelHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_msg2msgdcode/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_msg2msgdcode/pojo/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/websocketimooc/ChatMsg.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/websocketimooc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/websocketimooc/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/websocketimooc/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/websocketimooc/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/websocketimooc/User.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +67,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_test/outbound" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -52,10 +75,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wb.newcode._02_msg2msgdcode" />
       <recent name="com.wb.newcode.websocketimooc" />
       <recent name="com.wb.newcode._01" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_test/outbound" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_test/inbound" />
       <recent name="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc" />
       <recent name="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode" />
       <recent name="$PROJECT_DIR$/src/main/java/com/wb/newcode/_01" />
@@ -73,13 +99,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Client">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wb.App" />
       <module name="Netty" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.wb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.newcode._02_test.Client" />
+      <module name="Netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wb.newcode._02_test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,26 +139,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NioWebSocketServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wb.newcode.websocket.NioWebSocketServer" />
-      <module name="Netty" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wb.newcode.websocket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.wb.newcode._02_msg2msgdcode.Server" />
+      <option name="MAIN_CLASS_NAME" value="com.wb.newcode._02_test.Server" />
+      <module name="Netty" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wb.newcode._02_msg2msgdcode.*" />
+          <option name="PATTERN" value="com.wb.newcode._02_test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.TimeServer (2)" />
-        <item itemvalue="Application.NioWebSocketServer" />
-        <item itemvalue="Application.Server" />
       </list>
     </recent_temporary>
   </component>
@@ -179,26 +206,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/Msg2MsgDecoder.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/Msg2MsgDecoder.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/Msg2MsgEncoder.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_msg2msgdcode/Msg2MsgEncoder.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/wb/oldcode/_01timeserver/TimeServerHandler.java</url>
           <line>18</line>
@@ -258,16 +265,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/websocket/NioWebSocketHandler.java</url>
           <line>77</line>
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/Downloads/repository/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1.jar!/io/netty/util/concurrent/DefaultPromise.class</url>
-          <line>172</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/Downloads/repository/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1.jar!/io/netty/util/concurrent/DefaultPromise.class</url>
-          <line>170</line>
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

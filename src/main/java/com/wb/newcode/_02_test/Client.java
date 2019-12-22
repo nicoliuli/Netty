@@ -1,6 +1,5 @@
-package com.wb.newcode._02_msg2msgdcode;
+package com.wb.newcode._02_test;
 
-import com.wb.newcode._01.ClientHandler2;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -33,7 +32,7 @@ public class Client {
     private class ChildChannelHandler extends ChannelInitializer<SocketChannel>{
 
         protected void initChannel(SocketChannel socketChannel) throws Exception {
-            socketChannel.pipeline().addLast(new Msg2MsgEncoder());
+        //    socketChannel.pipeline().addLast();
         }
     }
 
