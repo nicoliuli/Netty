@@ -4,11 +4,12 @@ import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.channel.ChannelPromise;
 
 import java.net.SocketAddress;
 
-public class ClientHandler1 extends ChannelHandlerAdapter {
+public class ClientHandler1 extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
@@ -25,7 +26,7 @@ public class ClientHandler1 extends ChannelHandlerAdapter {
     }
 
 
-    @Override
+
     public void connect(ChannelHandlerContext ctx, SocketAddress remoteAddress, SocketAddress localAddress, ChannelPromise promise) throws Exception {
         System.out.println("ClientHandler1 connect执行");
         ctx.connect(remoteAddress, localAddress, promise);

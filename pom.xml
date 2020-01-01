@@ -28,7 +28,8 @@
       <dependency>
         <groupId>io.netty</groupId>
         <artifactId>netty-all</artifactId>
-        <version>5.0.0.Alpha1</version>
+        <!--<version>5.0.0.Alpha1</version>-->
+        <version>4.1.2.Final</version>
       </dependency>
     <!--这里使用jackson反序列字节码-->
     <dependency>

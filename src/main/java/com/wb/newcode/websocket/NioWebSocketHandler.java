@@ -20,7 +20,7 @@ public class NioWebSocketHandler extends SimpleChannelInboundHandler<Object> {
         private WebSocketServerHandshaker handshaker;
 
         @Override
-        public void messageReceived(ChannelHandlerContext ctx, Object msg) throws Exception {
+        public void channelRead0(ChannelHandlerContext ctx, Object msg) throws Exception {
 
             if (msg instanceof FullHttpRequest){
                 //以http请求形式接入，但是走的是websocket
