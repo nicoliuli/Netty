@@ -1,4 +1,4 @@
-package com.wb.newcode._02json.pojo;
+package com.wb.newcode._02mi.pojo;
 
 public class User {
     private int id;

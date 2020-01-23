@@ -2,39 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c955b992-1708-4e1d-ab58-3efeed51fdc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/handler/ClientHandler1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/handler/JsonMsgDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/handler/ServerHandler1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/handler/ClientBisHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/handler/ServerBisHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/session/ServerSession.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_01/TimeServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_01/TimeServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_test/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_test/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_test/inbound/InBoundHandler2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_test/inbound/InboundHandler1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_test/inbound/InboundHandler3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02_test/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_01/TimeServer$ChildChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_01/TimeServer$ChildChannelHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_01/TimeServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_01/TimeServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_test/Client$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_test/Client$ChildChannelHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_test/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_test/Server$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_test/Server$ChildChannelHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_test/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_test/inbound/InBoundHandler2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_test/inbound/InboundHandler1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_test/inbound/InboundHandler3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_test/outbound/OutBoundHandler2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_test/outbound/OutboundHandler1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_test/outbound/OutboundHandler3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02_test/pojo/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/oldcode/_01timeserver/TimeClient$ChildChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/oldcode/_01timeserver/TimeClient$ChildChannelHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/oldcode/_01timeserver/TimeClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/oldcode/_01timeserver/TimeClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/oldcode/_01timeserver/TimeClientHandler$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/oldcode/_01timeserver/TimeClientHandler$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/oldcode/_01timeserver/TimeClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/oldcode/_01timeserver/TimeClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/handler/ClientHandler1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/handler/JsonMsgDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/handler/JsonMsgDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02json/Client$ChildChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02json/Client$ChildChannelHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02json/Server$ChildChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02json/Server$ChildChannelHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02json/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02json/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02json/handler/ClientHandler1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02json/handler/JsonMsgDecoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02json/handler/JsonMsgDecoder.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +54,9 @@
     <property name="settings.editor.selected.configurable" value="Lombok plugin" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wb.newcode._02json.handler" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/handler" />
       <recent name="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json" />

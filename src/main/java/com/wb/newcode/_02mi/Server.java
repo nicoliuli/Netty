@@ -1,6 +1,7 @@
-package com.wb.newcode._02json;
+package com.wb.newcode._02mi;
 
-import com.wb.newcode._02json.handler.JsonMsgDecoder;
+import com.wb.newcode._02mi.handler.JsonMsgDecoder;
+import com.wb.newcode._02mi.handler.ServerBisHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -34,10 +35,11 @@ public class Server {
     private class ChildChannelHandler extends ChannelInitializer<SocketChannel>{
 
         protected void initChannel(SocketChannel ch) throws Exception {
-         //   ch.pipeline().addLast(new ServerHandler1());
+            //in解码
             ch.pipeline().addLast(new LengthFieldBasedFrameDecoder(1024,0,4,0,4));
             ch.pipeline().addLast(new StringDecoder(CharsetUtil.UTF_8));
             ch.pipeline().addLast(new JsonMsgDecoder());
+            ch.pipeline().addLast(new ServerBisHandler());
         }
     }
 

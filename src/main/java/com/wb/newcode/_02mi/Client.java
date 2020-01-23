@@ -1,6 +1,6 @@
-package com.wb.newcode._02json;
+package com.wb.newcode._02mi;
 
-import com.wb.newcode._02json.handler.ClientHandler1;
+import com.wb.newcode._02mi.handler.ClientBisHandler;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -32,10 +32,10 @@ public class Client {
     private class ChildChannelHandler extends ChannelInitializer<SocketChannel>{
 
         protected void initChannel(SocketChannel ch) throws Exception {
+            //out编码
             ch.pipeline().addLast(new LengthFieldPrepender(4));
             ch.pipeline().addLast(new StringEncoder(CharsetUtil.UTF_8));
-            ch.pipeline().addLast(new ClientHandler1());
-
+            ch.pipeline().addLast(new ClientBisHandler());
         }
     }
 
