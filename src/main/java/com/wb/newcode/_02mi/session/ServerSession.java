@@ -17,6 +17,11 @@ public class ServerSession {
     private User user;
     private Channel channel;
 
+    public ServerSession(Channel channel) {
+        this.channel = channel;
+        this.sessionId = buildSessionId();
+    }
+
     public String getSessionId() {
         return sessionId;
     }
@@ -37,14 +42,13 @@ public class ServerSession {
         return channel;
     }
 
-    public void setChannel(Channel channel) {
+    public void setChannel() {
         this.channel = channel;
     }
 
-    public void bind(Channel channel){
-        this.channel = channel;
-        this.sessionId = buildSessionId();
-        channel.attr(SESSION_KEY).set(this);
+    public void bind(){
+        this.channel.attr(SESSION_KEY).set(this);
+        ServerSessionMap.add(getSessionId(),this);
     }
 
     private String buildSessionId(){
@@ -54,5 +58,13 @@ public class ServerSession {
     public static ServerSession getSession(ChannelHandlerContext ctx){
         Channel channel = ctx.channel();
         return channel.attr(SESSION_KEY).get();
+    }
+
+    @Override
+    public String toString() {
+        return "ServerSession{" +
+                "sessionId='" + sessionId + '\'' +
+                ", user=" + user +
+                '}';
     }
 }
