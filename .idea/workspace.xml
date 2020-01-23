@@ -2,28 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c955b992-1708-4e1d-ab58-3efeed51fdc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/Client1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/handler/ExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/handler/LoginHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/pojo/ChatMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/pojo/MsgType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/ClientManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/session/ClientSession.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/handler/ClientBisHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/handler/ClientBisHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/handler/JsonMsgDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/handler/JsonMsgDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/handler/ServerBisHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/handler/ServerBisHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/Client1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/Client1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/pojo/ChatMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/pojo/ChatMsg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/session/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$ChildChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$ChildChannelHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Server$ChildChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Server$ChildChannelHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/handler/ClientBisHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/handler/ClientBisHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/handler/JsonMsgDecoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/handler/JsonMsgDecoder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client1$ChildChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client1$ChildChannelHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/handler/LoginHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/handler/LoginHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/handler/ServerBisHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/handler/ServerBisHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/pojo/ChatMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/pojo/ChatMsg.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/session/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/session/ServerSessionMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/session/ServerSessionMap.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +62,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wb.newcode._02mi.session" />
       <recent name="com.wb.newcode._02mi.handler" />
       <recent name="com.wb.newcode._02mi" />
       <recent name="com.wb.newcode._02json.handler" />
@@ -86,7 +84,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client1">
+  <component name="RunManager" selected="Application.ClientManager">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wb.newcode._02mi.Client" />
       <module name="netty" />
@@ -102,6 +100,19 @@
     </configuration>
     <configuration name="Client1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wb.newcode._02mi.Client1" />
+      <module name="netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wb.newcode._02mi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.newcode._02mi.ClientManager" />
       <module name="netty" />
       <extension name="coverage">
         <pattern>
@@ -154,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client1" />
+        <item itemvalue="Application.ClientManager" />
+        <item itemvalue="Application.Server" />
         <item itemvalue="Application.Client" />
-        <item itemvalue="Application.TimeServer (1)" />
+        <item itemvalue="Application.Client1" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.TimeClient (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +191,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -195,9 +208,24 @@
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/handler/ClientBisHandler.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="37" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/Client.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/Client.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/Client.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/ClientManager.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

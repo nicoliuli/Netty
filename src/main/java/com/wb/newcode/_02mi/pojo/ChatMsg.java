@@ -1,33 +1,33 @@
 package com.wb.newcode._02mi.pojo;
 
 public class ChatMsg {
-    private int fromId;
-    private int toId;
+    private Integer fromId;
+    private Integer toId;
     private String text;
     private int msgType = MsgType.MSG_TYPE_CHATMSG;
 
     public ChatMsg() {
     }
 
-    public ChatMsg(int fromId, int toId, String text) {
+    public ChatMsg(Integer fromId, Integer toId, String text) {
         this.fromId = fromId;
         this.toId = toId;
         this.text = text;
     }
 
-    public int getFromId() {
+    public Integer getFromId() {
         return fromId;
     }
 
-    public void setFromId(int fromId) {
+    public void setFromId(Integer fromId) {
         this.fromId = fromId;
     }
 
-    public int getToId() {
+    public Integer getToId() {
         return toId;
     }
 
-    public void setToId(int toId) {
+    public void setToId(Integer toId) {
         this.toId = toId;
     }
 
