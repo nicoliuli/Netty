@@ -1,6 +1,8 @@
 package com.wb.newcode._02mi;
 
+import com.wb.newcode._02mi.handler.ExceptionHandler;
 import com.wb.newcode._02mi.handler.JsonMsgDecoder;
+import com.wb.newcode._02mi.handler.LoginHandler;
 import com.wb.newcode._02mi.handler.ServerBisHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -11,7 +13,9 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
+import io.netty.handler.codec.LengthFieldPrepender;
 import io.netty.handler.codec.string.StringDecoder;
+import io.netty.handler.codec.string.StringEncoder;
 import io.netty.util.CharsetUtil;
 
 public class Server {
@@ -39,7 +43,13 @@ public class Server {
             ch.pipeline().addLast(new LengthFieldBasedFrameDecoder(1024,0,4,0,4));
             ch.pipeline().addLast(new StringDecoder(CharsetUtil.UTF_8));
             ch.pipeline().addLast(new JsonMsgDecoder());
-            ch.pipeline().addLast(new ServerBisHandler());
+            ch.pipeline().addLast("loginHandler",new LoginHandler());
+            ch.pipeline().addLast("serverBisHandler",new ServerBisHandler());
+            //out编码
+            ch.pipeline().addLast(new LengthFieldPrepender(4));
+            ch.pipeline().addLast(new StringEncoder(CharsetUtil.UTF_8));
+            //异常处理
+            ch.pipeline().addLast(new ExceptionHandler());
         }
     }
 

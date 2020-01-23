@@ -4,6 +4,7 @@ public class User {
     private int id;
     private String name;
     private int age;
+    private int msgType = MsgType.MSG_TYPE_USER;
 
     public int getId() {
         return id;
@@ -27,6 +28,14 @@ public class User {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public int getMsgType() {
+        return msgType;
+    }
+
+    public void setMsgType(int msgType) {
+        this.msgType = msgType;
     }
 
     public User(int id, String name, int age) {

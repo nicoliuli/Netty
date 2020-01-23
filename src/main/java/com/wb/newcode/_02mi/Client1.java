@@ -19,7 +19,7 @@ import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 import io.netty.util.CharsetUtil;
 
-public class Client {
+public class Client1 {
     public void connect(String host,int port) throws Exception{
         EventLoopGroup group = new NioEventLoopGroup();
         try{
@@ -29,7 +29,7 @@ public class Client {
                     .handler(new ChildChannelHandler());
 
             ChannelFuture f = b.connect(host,port).sync();
-            f.channel().writeAndFlush(JSON.toJSONString(new User(1,"张三",20)));
+            f.channel().writeAndFlush(JSON.toJSONString(new User(2,"李四",21)));
             f.channel().closeFuture().sync();
         }finally {
             group.shutdownGracefully();
@@ -42,7 +42,7 @@ public class Client {
             //out编码
             ch.pipeline().addLast(new LengthFieldPrepender(4));
             ch.pipeline().addLast(new StringEncoder(CharsetUtil.UTF_8));
-            //in解码
+            //in 解码
             ch.pipeline().addLast(new LengthFieldBasedFrameDecoder(1024,0,4,0,4));
             ch.pipeline().addLast(new StringDecoder(CharsetUtil.UTF_8));
             ch.pipeline().addLast(new JsonMsgDecoder());
@@ -55,6 +55,6 @@ public class Client {
     public static void main(String[] args) throws Exception {
         String host = "127.0.0.1";
         int port  = 8080;
-        new Client().connect(host,port);
+        new Client1().connect(host,port);
     }
 }

@@ -1,20 +1,17 @@
 package com.wb.newcode._02mi.handler;
 
-import com.alibaba.fastjson.JSON;
-import com.wb.newcode._02mi.pojo.User;
-import io.netty.channel.Channel;
+import com.wb.newcode._02mi.pojo.ChatMsg;
 import io.netty.channel.ChannelHandlerContext;
-import io.netty.channel.ChannelInboundHandlerAdapter;
+import io.netty.channel.SimpleChannelInboundHandler;
 
-public class ClientBisHandler extends ChannelInboundHandlerAdapter {
+public class ClientBisHandler extends SimpleChannelInboundHandler {
 
 
     @Override
-    public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        User u = new User(1,"zhangsan",20);
-        Channel channel = ctx.channel();
-        channel.writeAndFlush(JSON.toJSONString(u));
-
+    protected void channelRead0(ChannelHandlerContext channelHandlerContext, Object o) throws Exception {
+        if(o instanceof ChatMsg){
+            ChatMsg chatMsg = (ChatMsg) o;
+            System.out.println(chatMsg);
+        }
     }
-
 }
