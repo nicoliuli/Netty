@@ -1,12 +1,13 @@
 package com.wb.newcode._01;
 
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.*;
+import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelInitializer;
+import io.netty.channel.ChannelOption;
+import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-
-import java.util.Date;
 
 public class TimeServer {
     public void bind(int port) throws Exception{
@@ -39,10 +40,8 @@ public class TimeServer {
     }
 
     public static void main(String[] args) throws Exception {
-//        int port = 8080;
+        int port = 8080;
 //        //
-//        new TimeServer().bind(port);
-        System.out.println(new Date().getTime());
-        System.out.println((System.currentTimeMillis() - 1575605980000L) / (1000 * 3600));
+        new TimeServer().bind(port);
     }
 }
