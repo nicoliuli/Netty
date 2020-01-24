@@ -8,6 +8,4 @@ public class ClientManager {
         new Client(UserDao.getUserById(1)).onStart();
         System.exit(-1);
     }
-
-
 }

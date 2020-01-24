@@ -50,14 +50,19 @@ public class Client {
             });
 
             //类似于发一条登录消息
-            f.channel().writeAndFlush(JSON.toJSONString(this.user));
-            this.channel = f.channel();
-            new Thread(new Runnable() {
+            f.channel().writeAndFlush(JSON.toJSONString(this.user)).addListener(new GenericFutureListener<Future<? super Void>>() {
                 @Override
-                public void run() {
-                   sendChatMsg();
+                public void operationComplete(Future<? super Void> future) throws Exception {
+                    channel = f.channel();
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            sendChatMsg();
+                        }
+                    }).start();
                 }
-            }).start();
+            });
+
             f.channel().closeFuture().sync().addListener(new GenericFutureListener<Future<? super Void>>() {
                 @Override
                 public void operationComplete(Future<? super Void> future) throws Exception {

@@ -2,25 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c955b992-1708-4e1d-ab58-3efeed51fdc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/manager/ClientManager1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/ClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/manager/ClientManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/handler/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/handler/LoginHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/handler/ServerBisHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/handler/ServerBisHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/manager/ClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/manager/ClientManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/manager/ClientManager1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/manager/ClientManager1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$ChildChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$ChildChannelHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client1$ChildChannelHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/ClientManager$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/ClientManager$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/ClientManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/handler/LoginHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/handler/LoginHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/handler/ServerBisHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/handler/ServerBisHandler.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Server">
+  <component name="RunManager" selected="Application.ClientManager1">
     <configuration name="Client1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wb.newcode._02mi.Client1" />
       <module name="netty" />
@@ -166,9 +155,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ClientManager (1)" />
         <item itemvalue="Application.ClientManager1" />
         <item itemvalue="Application.Server" />
+        <item itemvalue="Application.ClientManager (1)" />
         <item itemvalue="Application.ClientManager" />
         <item itemvalue="Application.Client1" />
       </list>
