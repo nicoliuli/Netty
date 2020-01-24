@@ -20,6 +20,8 @@ import io.netty.util.CharsetUtil;
 import io.netty.util.concurrent.Future;
 import io.netty.util.concurrent.GenericFutureListener;
 
+import java.util.Scanner;
+
 public class Client {
     //客户端与用户绑定
     private volatile User user;
@@ -43,7 +45,6 @@ public class Client {
                 public void operationComplete(Future<? super Void> future) throws Exception {
                     if (future.isSuccess()) {
                         System.out.println("链接成功");
-
                     }
                 }
             });
@@ -96,16 +97,23 @@ public class Client {
    public void sendChatMsg(){
        ChatMsg chatMsg = new ChatMsg();
        chatMsg.setFromId(this.user.getId());
-       chatMsg.setToId(this.user.getId()==1?2:1);
        chatMsg.setMsgType(MsgType.MSG_TYPE_CHATMSG);
-       chatMsg.setText("hello,我是"+ user.getName());
-       for(int i=0;i<10;i++){
+       Scanner sc = new Scanner(System.in);
+       System.out.print("请输入对方的uid：");
+       String uid = sc.nextLine();
+       chatMsg.setToId(Integer.parseInt(uid));
+       while (sc.hasNextLine()){
+           String line = sc.nextLine();
+           chatMsg.setText(line);
            this.channel.writeAndFlush(JSON.toJSONString(chatMsg));
-           /*try {
-               Thread.sleep(1000);
-           } catch (InterruptedException e) {
-               e.printStackTrace();
-           }*/
+           if("exit".equals(line) || "quit".equals(line)){
+               channel.close().addListener(new GenericFutureListener<Future<? super Void>>() {
+                   @Override
+                   public void operationComplete(Future<? super Void> future) throws Exception {
+                       System.out.println("channel close");
+                   }
+               });
+           }
        }
    }
 }

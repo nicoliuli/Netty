@@ -2,10 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c955b992-1708-4e1d-ab58-3efeed51fdc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/manager/ClientManager1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/ClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/ClientManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/ClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/manager/ClientManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/handler/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/handler/LoginHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/handler/ServerBisHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/handler/ServerBisHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$ChildChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client$ChildChannelHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client1$ChildChannelHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/Client1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/ClientManager$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/ClientManager$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/ClientManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/handler/LoginHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/handler/LoginHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/handler/ServerBisHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/_02mi/handler/ServerBisHandler.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +62,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wb.newcode._02mi.manager" />
       <recent name="com.wb.newcode._02mi.session" />
       <recent name="com.wb.newcode._02mi.handler" />
       <recent name="com.wb.newcode._02mi" />
@@ -69,20 +85,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client1">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wb.newcode._02mi.Client" />
-      <module name="netty" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wb.newcode._02mi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Server">
     <configuration name="Client1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wb.newcode._02mi.Client1" />
       <module name="netty" />
@@ -96,12 +99,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ClientManager (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.newcode._02mi.manager.ClientManager" />
+      <module name="netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wb.newcode._02mi.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ClientManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wb.newcode._02mi.ClientManager" />
       <module name="netty" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.wb.newcode._02mi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientManager1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.newcode._02mi.manager.ClientManager1" />
+      <module name="netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wb.newcode._02mi.manager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,26 +164,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wb.newcode._02mi.session.Test" />
-      <module name="netty" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wb.newcode._02mi.session.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client1" />
-        <item itemvalue="Application.ClientManager" />
+        <item itemvalue="Application.ClientManager (1)" />
+        <item itemvalue="Application.ClientManager1" />
         <item itemvalue="Application.Server" />
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.ClientManager" />
+        <item itemvalue="Application.Client1" />
       </list>
     </recent_temporary>
   </component>

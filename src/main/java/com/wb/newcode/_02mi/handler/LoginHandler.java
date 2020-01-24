@@ -1,5 +1,6 @@
 package com.wb.newcode._02mi.handler;
 
+import com.wb.newcode._02mi.dao.UserDao;
 import com.wb.newcode._02mi.pojo.User;
 import com.wb.newcode._02mi.session.ServerSession;
 import io.netty.channel.ChannelHandlerContext;
@@ -23,16 +24,11 @@ public class LoginHandler extends ChannelInboundHandlerAdapter {
                 ctx.pipeline().remove(LoginHandler.this);
                 System.out.println("login:"+u);
             }
-            //返回登陆失败的响应
-
         }
     }
 
     private boolean checkLogin(User u){
-        if(u.getId()==1 || u.getId()==2){
-            return true;
-        }
-        return false;
+        return UserDao.getUserById(u.getId()) != null;
     }
 
 }
