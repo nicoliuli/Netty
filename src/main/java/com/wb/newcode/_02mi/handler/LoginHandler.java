@@ -1,6 +1,5 @@
 package com.wb.newcode._02mi.handler;
 
-import com.wb.newcode._02mi.pojo.ChatMsg;
 import com.wb.newcode._02mi.pojo.User;
 import com.wb.newcode._02mi.session.ServerSession;
 import io.netty.channel.ChannelHandlerContext;
@@ -23,9 +22,6 @@ public class LoginHandler extends ChannelInboundHandlerAdapter {
                 //删除handler
                 ctx.pipeline().remove(LoginHandler.this);
                 System.out.println("login:"+u);
-                //临时构造一条聊天
-                ChatMsg chatMsg = new ChatMsg(u.getId(),1,"你好，我是"+u.getName());
-                ctx.fireChannelRead(chatMsg);
             }
             //返回登陆失败的响应
 

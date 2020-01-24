@@ -1,10 +1,12 @@
 package com.wb.newcode._02mi;
 
 import com.alibaba.fastjson.JSON;
-import com.wb.newcode._02mi.dao.UserDao;
 import com.wb.newcode._02mi.handler.ClientBisHandler;
 import com.wb.newcode._02mi.handler.ExceptionHandler;
 import com.wb.newcode._02mi.handler.JsonMsgDecoder;
+import com.wb.newcode._02mi.pojo.ChatMsg;
+import com.wb.newcode._02mi.pojo.MsgType;
+import com.wb.newcode._02mi.pojo.User;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -19,7 +21,15 @@ import io.netty.util.concurrent.Future;
 import io.netty.util.concurrent.GenericFutureListener;
 
 public class Client {
-    private Channel channel = null;
+    //客户端与用户绑定
+    private volatile User user;
+    private Channel channel;
+    public Client(){
+    }
+    public Client(User user) {
+        this.user = user;
+    }
+
     public void connect(String host, int port) throws Exception {
         EventLoopGroup group = new NioEventLoopGroup();
         try {
@@ -28,7 +38,7 @@ public class Client {
                     .option(ChannelOption.TCP_NODELAY, true)
                     .handler(new ChildChannelHandler());
 
-            ChannelFuture f = b.connect(host, port).sync().addListener(new GenericFutureListener<Future<? super Void>>() {
+            ChannelFuture f = b.connect(host, port).addListener(new GenericFutureListener<Future<? super Void>>() {
                 @Override
                 public void operationComplete(Future<? super Void> future) throws Exception {
                     if (future.isSuccess()) {
@@ -37,10 +47,23 @@ public class Client {
                     }
                 }
             });
-            this.channel = f.channel();
+
             //类似于发一条登录消息
-            f.channel().writeAndFlush(JSON.toJSONString(UserDao.getUserById(1)));
-            f.channel().closeFuture().sync();
+            f.channel().writeAndFlush(JSON.toJSONString(this.user));
+            this.channel = f.channel();
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+               //    sendChatMsg();
+                }
+            }).start();
+            f.channel().closeFuture().sync().addListener(new GenericFutureListener<Future<? super Void>>() {
+                @Override
+                public void operationComplete(Future<? super Void> future) throws Exception {
+                    System.out.println("client close");
+                }
+            });
+
         } finally {
             group.shutdownGracefully();
         }
@@ -65,10 +88,30 @@ public class Client {
     public void onStart() throws Exception {
         String host = "127.0.0.1";
         int port = 8080;
-        new Client().connect(host, port);
+        this.connect(host, port);
     }
 
-    public Channel getChannel() {
-        return this.channel;
+
+    //死循环监听客户端发消息
+   public void sendChatMsg(){
+       ChatMsg chatMsg = new ChatMsg();
+       chatMsg.setFromId(this.user.getId());
+       chatMsg.setToId(this.user.getId()==1?2:1);
+       chatMsg.setMsgType(MsgType.MSG_TYPE_CHATMSG);
+       chatMsg.setText("hello,我是"+ user.getName());
+       for(int i=0;i<10;i++){
+           this.channel.writeAndFlush(JSON.toJSONString(chatMsg));
+           /*try {
+               Thread.sleep(1000);
+           } catch (InterruptedException e) {
+               e.printStackTrace();
+           }*/
+       }
+   }
+
+    public void sendChatMsg(ChatMsg chatMsg){
+        if(chatMsg != null){
+            this.channel.writeAndFlush(JSON.toJSONString(chatMsg));
+        }
     }
 }

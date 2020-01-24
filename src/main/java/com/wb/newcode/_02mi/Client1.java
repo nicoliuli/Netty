@@ -19,7 +19,6 @@ import io.netty.util.concurrent.Future;
 import io.netty.util.concurrent.GenericFutureListener;
 
 public class Client1 {
-    private Channel channel = null;
     public void connect(String host, int port) throws Exception {
         EventLoopGroup group = new NioEventLoopGroup();
         try {
@@ -36,7 +35,6 @@ public class Client1 {
                     }
                 }
             });
-            this.channel = f.channel();
             //类似于发一条登录消息
             f.channel().writeAndFlush(JSON.toJSONString(UserDao.getUserById(2)));
             f.channel().closeFuture().sync();
@@ -61,13 +59,9 @@ public class Client1 {
         }
     }
 
-    public  void onStart() throws Exception {
+    public static void main(String []args) throws Exception {
         String host = "127.0.0.1";
         int port = 8080;
         new Client1().connect(host, port);
-    }
-
-    public Channel getChannel(){
-        return this.channel;
     }
 }
