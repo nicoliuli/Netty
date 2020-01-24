@@ -9,7 +9,6 @@ public class ClientManager {
             public void run() {
                 try {
                     new Client(UserDao.getUserById(1)).onStart();
-                    System.out.println("aaa");
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

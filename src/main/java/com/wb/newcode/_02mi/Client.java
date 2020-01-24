@@ -54,7 +54,7 @@ public class Client {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-               //    sendChatMsg();
+                   sendChatMsg();
                 }
             }).start();
             f.channel().closeFuture().sync().addListener(new GenericFutureListener<Future<? super Void>>() {
@@ -108,10 +108,4 @@ public class Client {
            }*/
        }
    }
-
-    public void sendChatMsg(ChatMsg chatMsg){
-        if(chatMsg != null){
-            this.channel.writeAndFlush(JSON.toJSONString(chatMsg));
-        }
-    }
 }
