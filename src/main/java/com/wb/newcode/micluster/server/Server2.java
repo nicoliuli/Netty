@@ -1,7 +1,7 @@
 package com.wb.newcode.micluster.server;
 
-import com.wb.newcode._02mi.handler.*;
 import com.wb.newcode.micluster.Listener.RetryListener;
+import com.wb.newcode.micluster.handler.ClusterSessionHandler;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -12,16 +12,12 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
-import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
-import io.netty.handler.codec.LengthFieldPrepender;
-import io.netty.handler.codec.string.StringDecoder;
-import io.netty.handler.codec.string.StringEncoder;
-import io.netty.util.CharsetUtil;
 import io.netty.util.concurrent.Future;
 import io.netty.util.concurrent.GenericFutureListener;
 
 public class Server2 {
     private static Server2 server2 = new Server2();
+    private static String serverId = "2";
 
     public void bind(int port) throws Exception{
         EventLoopGroup bossGroup = new NioEventLoopGroup();
@@ -43,17 +39,6 @@ public class Server2 {
     private class ServerChildChannelHandler extends ChannelInitializer<SocketChannel>{
 
         protected void initChannel(SocketChannel ch) throws Exception {
-            //in解码
-            ch.pipeline().addLast(new LengthFieldBasedFrameDecoder(1024,0,4,0,4));
-            ch.pipeline().addLast(new StringDecoder(CharsetUtil.UTF_8));
-            ch.pipeline().addLast(new JsonMsgDecoder());
-            ch.pipeline().addLast("loginHandler",new LoginHandler());
-            ch.pipeline().addLast("serverBisHandler",new ServerBisHandler());
-            //out编码
-            ch.pipeline().addLast(new LengthFieldPrepender(4));
-            ch.pipeline().addLast(new StringEncoder(CharsetUtil.UTF_8));
-            //异常处理
-            ch.pipeline().addLast(new ExceptionHandler());
         }
     }
 
@@ -72,7 +57,7 @@ public class Server2 {
                     .option(ChannelOption.TCP_NODELAY, true)
                     .handler(new ClientChildChannelHandler());
 
-            ChannelFuture f = b.connect(host, port).addListener(new RetryListener(b,host,port));
+            ChannelFuture f = b.connect(host, port).addListener(new RetryListener(serverId));
 
 
             f.channel().closeFuture().sync().addListener(new GenericFutureListener<Future<? super Void>>() {
@@ -93,16 +78,7 @@ public class Server2 {
     private class ClientChildChannelHandler extends ChannelInitializer<SocketChannel> {
 
         protected void initChannel(SocketChannel ch) throws Exception {
-            //out编码
-            ch.pipeline().addLast(new LengthFieldPrepender(4));
-            ch.pipeline().addLast(new StringEncoder(CharsetUtil.UTF_8));
-            //in解码
-            ch.pipeline().addLast(new LengthFieldBasedFrameDecoder(1024, 0, 4, 0, 4));
-            ch.pipeline().addLast(new StringDecoder(CharsetUtil.UTF_8));
-            ch.pipeline().addLast(new JsonMsgDecoder());
-            ch.pipeline().addLast(new ClientBisHandler());
-            //异常处理
-            ch.pipeline().addLast(new ExceptionHandler());
+            ch.pipeline().addLast(new ClusterSessionHandler(serverId,"1"));
         }
     }
 
@@ -113,7 +89,7 @@ public class Server2 {
         server2.connect(host,port);
     }
 
-    public static void main(String[] args) {
+    public  void open() {
         new Thread(new Runnable() {
             @Override
             public void run() {
