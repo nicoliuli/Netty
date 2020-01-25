@@ -2,31 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c955b992-1708-4e1d-ab58-3efeed51fdc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/dao/SessionDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/ClusterSessionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/LoginHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/RouteHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/server/ServerManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/session/ClusterSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/session/ClusterSessionMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/JsonMsgDecoderHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/session/ServerSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/session/ServerSessionMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/session/UserLoginMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/Listener/RetryListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/Listener/RetryListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/LoginHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/RouteHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/RouteHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/server/Server1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/server/Server1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/server/Server2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/server/Server2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/Listener/RetryListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/Listener/RetryListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/client/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/client/Client$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/client/Client$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/client/Client$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/client/Client$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/client/Client$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/client/Client$ChildChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/client/Client$ChildChannelHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/client/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/handler/MessageHandler.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1$ClientChildChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1$ClientChildChannelHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1$ServerChildChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1$ServerChildChannelHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2$ClientChildChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2$ClientChildChannelHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2$ServerChildChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2$ServerChildChannelHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +60,7 @@
   </component>
   <component name="ProjectId" id="1WmKaYaMdieQTY0MLrH23Gzpwq4" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/handler" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/session" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -78,6 +75,7 @@
       <recent name="com.wb.newcode._02mi.session" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/session" />
       <recent name="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/handler" />
       <recent name="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json" />
     </key>
@@ -201,13 +199,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/server/Server1.java</url>
-          <line>67</line>
+          <line>82</line>
           <option name="timeStamp" value="99" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="102" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/ClusterSessionHandler.java</url>
@@ -215,14 +208,64 @@
           <option name="timeStamp" value="104" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="105" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/RouteHandler.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="126" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client.java</url>
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.2.Final/netty-all-4.1.2.Final.jar!/io/netty/channel/DefaultChannelPipeline.class</url>
+          <line>1017</line>
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/JsonMsgDecoderHandler.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/JsonMsgDecoderHandler.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="146" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/_02mi/handler/ClientBisHandler.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/RouteHandler.java</url>
           <line>38</line>
-          <option name="timeStamp" value="107" />
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/ClusterSessionHandler.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/session/ClusterSessionMap.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/LoginHandler.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/RouteHandler.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/RouteHandler.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/session/ClusterSessionMap.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="157" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
