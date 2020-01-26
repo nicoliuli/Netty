@@ -6,16 +6,15 @@ import java.util.concurrent.ConcurrentHashMap;
  * 记录客户端链接在哪台机器上
  */
 public class UserLoginMap {
-    private static ConcurrentHashMap<String,ClusterSession> userLoginMap = new ConcurrentHashMap();
+    private static ConcurrentHashMap<String,String> userLoginMap = new ConcurrentHashMap<>();
 
-    public static void add(String uid,ClusterSession clusterSession){
-        userLoginMap.put(uid,clusterSession);
+
+    public static void add(String uid,String serverId){
+        userLoginMap.put(uid,serverId);
     }
-
-    public static ClusterSession get(String uid){
+    public static String getServerId(String uid){
         return userLoginMap.get(uid);
     }
-
     public static void remove(String uid){
         userLoginMap.remove(uid);
     }

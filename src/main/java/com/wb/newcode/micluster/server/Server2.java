@@ -1,16 +1,17 @@
 package com.wb.newcode.micluster.server;
 
+import com.alibaba.fastjson.JSON;
+import com.wb.newcode._02mi.pojo.ChatMsg;
 import com.wb.newcode.micluster.Listener.RetryListener;
-import com.wb.newcode.micluster.handler.ClusterSessionHandler;
 import com.wb.newcode.micluster.handler.JsonMsgDecoderHandler;
 import com.wb.newcode.micluster.handler.LoginHandler;
 import com.wb.newcode.micluster.handler.RouteHandler;
+import com.wb.newcode.micluster.session.Redis;
+import com.wb.newcode.micluster.session.ServerSession;
+import com.wb.newcode.micluster.session.ServerSessionMap;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelInitializer;
-import io.netty.channel.ChannelOption;
-import io.netty.channel.EventLoopGroup;
+import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
@@ -22,6 +23,8 @@ import io.netty.handler.codec.string.StringEncoder;
 import io.netty.util.CharsetUtil;
 import io.netty.util.concurrent.Future;
 import io.netty.util.concurrent.GenericFutureListener;
+
+import java.util.List;
 
 public class Server2 {
     private static Server2 server2 = new Server2();
@@ -36,7 +39,31 @@ public class Server2 {
                     .channel(NioServerSocketChannel.class)
                     .option(ChannelOption.SO_BACKLOG,1024)
                     .childHandler(new ServerChildChannelHandler());
-            ChannelFuture f = b.bind(port).sync();
+            ChannelFuture f = b.bind(port).sync().addListener(new GenericFutureListener<Future<? super Void>>() {
+                @Override
+                public void operationComplete(Future<? super Void> future) throws Exception {
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            try {
+                                while (true){
+                                    ChatMsg chatMsg = Redis.q2.take();
+                                    Integer toId = chatMsg.getToId();
+                                    List<ServerSession> sessions = ServerSessionMap.getSessionByUid(toId);
+                                    if(sessions!=null && sessions.size()>0){
+                                        for(ServerSession session:sessions){
+                                            Channel channel = session.getChannel();
+                                            channel.writeAndFlush(JSON.toJSONString(chatMsg));
+                                        }
+                                    }
+                                }
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }).start();
+                }
+            });
             f.channel().closeFuture().sync();
         }finally {
             bossGroup.shutdownGracefully();
@@ -51,8 +78,8 @@ public class Server2 {
             ch.pipeline().addLast(new LengthFieldBasedFrameDecoder(1024,0,4,0,4));
             ch.pipeline().addLast(new StringDecoder(CharsetUtil.UTF_8));
             ch.pipeline().addLast(new JsonMsgDecoderHandler());
-            ch.pipeline().addLast(new LoginHandler(serverId,"1"));
-            ch.pipeline().addLast(new RouteHandler(serverId,"1"));
+            ch.pipeline().addLast(new LoginHandler(serverId));
+            ch.pipeline().addLast(new RouteHandler(serverId));
             //out编码
             ch.pipeline().addLast(new LengthFieldPrepender(4));
             ch.pipeline().addLast(new StringEncoder(CharsetUtil.UTF_8));
@@ -66,45 +93,9 @@ public class Server2 {
 
     //=======================================
 
-    public void connect(String host, int port) throws Exception {
-        EventLoopGroup group = new NioEventLoopGroup();
-        try {
-            Bootstrap b = new Bootstrap();
-            b.group(group).channel(NioSocketChannel.class)
-                    .option(ChannelOption.TCP_NODELAY, true)
-                    .handler(new ClientChildChannelHandler());
-
-            ChannelFuture f = b.connect(host, port).addListener(new RetryListener(serverId));
 
 
-            f.channel().closeFuture().sync().addListener(new GenericFutureListener<Future<? super Void>>() {
-                @Override
-                public void operationComplete(Future<? super Void> future) throws Exception {
-                    System.out.println("client close");
-                }
-            });
 
-        } finally {
-            group.shutdownGracefully();
-            //重试
-            Thread.sleep(3000);
-            connect(host, port);
-        }
-    }
-
-    private class ClientChildChannelHandler extends ChannelInitializer<SocketChannel> {
-
-        protected void initChannel(SocketChannel ch) throws Exception {
-            ch.pipeline().addLast(new ClusterSessionHandler(serverId,"1"));
-        }
-    }
-
-
-    public static void onStartClient() throws Exception{
-        String host = "127.0.0.1";
-        int port = 8080;
-        server2.connect(host,port);
-    }
 
     public  void open() {
         new Thread(new Runnable() {
@@ -118,16 +109,6 @@ public class Server2 {
             }
         }).start();
 
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    onStartClient();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        }).start();
 
     }
 }

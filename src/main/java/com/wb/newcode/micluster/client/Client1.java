@@ -8,6 +8,9 @@ import com.wb.newcode._02mi.pojo.ChatMsg;
 import com.wb.newcode._02mi.pojo.MsgType;
 import com.wb.newcode._02mi.pojo.User;
 import com.wb.newcode.micluster.handler.JsonMsgDecoderHandler;
+import com.wb.newcode.micluster.session.ServerSession;
+import com.wb.newcode.micluster.session.ServerSessionMap;
+import com.wb.newcode.micluster.session.UserLoginMap;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -23,7 +26,7 @@ import io.netty.util.concurrent.GenericFutureListener;
 
 import java.util.Scanner;
 
-public class Client {
+public class Client1 {
     //客户端与用户绑定
     private static User user = UserDao.getUserById(1);
     private static Channel channel;
@@ -100,6 +103,10 @@ public class Client {
         chatMsg.setToId(Integer.parseInt(uid));
         while (sc.hasNextLine()) {
             String line = sc.nextLine();
+            if("exit".equals(line) || "quit".equals(line)){
+                f.channel().close();
+                return;
+            }
             chatMsg.setText(line);
             f.channel().writeAndFlush(JSON.toJSONString(chatMsg));
         }
