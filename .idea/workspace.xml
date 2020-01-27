@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c955b992-1708-4e1d-ab58-3efeed51fdc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/server/Server2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/server/Server2.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
