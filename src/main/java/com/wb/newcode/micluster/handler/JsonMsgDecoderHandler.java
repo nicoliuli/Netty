@@ -27,7 +27,6 @@ public class JsonMsgDecoderHandler extends ChannelInboundHandlerAdapter {
                     ctx.fireChannelRead(chatMsg);
                 }
             }
-
         }
     }
 }

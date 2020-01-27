@@ -29,7 +29,6 @@ import java.util.Scanner;
 public class Client1 {
     //客户端与用户绑定
     private static User user = UserDao.getUserById(1);
-    private static Channel channel;
 
 
     public static void connect(String host, int port) throws Exception {
@@ -104,6 +103,8 @@ public class Client1 {
         while (sc.hasNextLine()) {
             String line = sc.nextLine();
             if("exit".equals(line) || "quit".equals(line)){
+                chatMsg.setText(line);
+                f.channel().writeAndFlush(JSON.toJSONString(chatMsg));
                 f.channel().close();
                 return;
             }

@@ -2,36 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c955b992-1708-4e1d-ab58-3efeed51fdc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/session/Redis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/ClusterSessionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/LoginHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/RouteHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/RouteHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/server/Server1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/server/Server1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/server/Server2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/server/Server2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/session/ClusterSession.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/session/ClusterSessionMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/session/UserLoginMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/session/UserLoginMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/handler/ClusterSessionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/handler/LoginHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/handler/LoginHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/handler/RouteHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/handler/RouteHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1$ClientChildChannelHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1$ServerChildChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1$ServerChildChannelHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2$ClientChildChannelHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2$ServerChildChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2$ServerChildChannelHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/server/Server2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/session/ClusterSession.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/session/ClusterSessionMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/session/UserLoginMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/micluster/session/UserLoginMap.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ServerManager">
+  <component name="RunManager" selected="Application.Client2">
     <configuration name="Client1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wb.newcode.micluster.client.Client1" />
       <module name="netty" />
@@ -207,63 +181,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client1.java</url>
-          <line>66</line>
+          <line>65</line>
           <option name="timeStamp" value="189" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/RouteHandler.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="191" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/RouteHandler.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="193" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/RouteHandler.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="194" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/session/UserLoginMap.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="201" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/RouteHandler.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="202" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/server/Server1.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="203" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/server/Server1.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="204" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client1.java</url>
-          <line>111</line>
-          <option name="timeStamp" value="205" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/RouteHandler.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="206" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/JsonMsgDecoderHandler.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="207" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/handler/JsonMsgDecoderHandler.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="208" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

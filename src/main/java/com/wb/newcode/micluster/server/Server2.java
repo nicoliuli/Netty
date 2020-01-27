@@ -91,11 +91,6 @@ public class Server2 {
         server2.bind(port);
     }
 
-    //=======================================
-
-
-
-
 
     public  void open() {
         new Thread(new Runnable() {
