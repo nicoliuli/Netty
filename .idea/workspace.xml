@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c955b992-1708-4e1d-ab58-3efeed51fdc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/ssl/HttpSslHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/ssl/HttpSslerver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,11 +49,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wb.newcode.ssl" />
       <recent name="com.wb.newcode.micluster.client" />
       <recent name="com.wb.newcode.micluster.handler" />
       <recent name="com.wb.newcode.micluster.server" />
       <recent name="com.wb.newcode._02mi.manager" />
-      <recent name="com.wb.newcode._02mi.session" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/session" />
@@ -71,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client2">
+  <component name="RunManager" selected="Application.HttpSslerver">
     <configuration name="Client1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wb.newcode.micluster.client.Client1" />
       <module name="netty" />
@@ -98,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Server1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wb.newcode.micluster.server.Server1" />
+    <configuration name="HttpSslerver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.newcode.ssl.HttpSslerver" />
       <module name="netty" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wb.newcode.micluster.server.*" />
+          <option name="PATTERN" value="com.wb.newcode.ssl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HttpSslerver" />
         <item itemvalue="Application.Client2" />
         <item itemvalue="Application.Client1" />
         <item itemvalue="Application.ServerManager" />
         <item itemvalue="Application.Server2" />
-        <item itemvalue="Application.Server1" />
       </list>
     </recent_temporary>
   </component>
@@ -180,6 +182,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client1.java</url>
           <line>65</line>
           <option name="timeStamp" value="189" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.2.Final/netty-all-4.1.2.Final.jar!/io/netty/handler/codec/http/HttpClientCodec.class</url>
+          <line>153</line>
+          <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.2.Final/netty-all-4.1.2.Final.jar!/io/netty/handler/codec/http/HttpClientCodec.class</url>
+          <line>78</line>
+          <option name="timeStamp" value="193" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

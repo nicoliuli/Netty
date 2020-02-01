@@ -1,6 +1,6 @@
-package com.wb.newcode._02mi.dao;
+package com.wb.newcode.mi.dao;
 
-import com.wb.newcode._02mi.pojo.User;
+import com.wb.newcode.mi.pojo.User;
 
 import java.util.HashMap;
 import java.util.Map;

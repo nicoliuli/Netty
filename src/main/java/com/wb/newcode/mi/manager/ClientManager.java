@@ -1,7 +1,7 @@
-package com.wb.newcode._02mi.manager;
+package com.wb.newcode.mi.manager;
 
-import com.wb.newcode._02mi.Client;
-import com.wb.newcode._02mi.dao.UserDao;
+import com.wb.newcode.mi.Client;
+import com.wb.newcode.mi.dao.UserDao;
 
 public class ClientManager {
     public static void main(String[] args) throws Exception{

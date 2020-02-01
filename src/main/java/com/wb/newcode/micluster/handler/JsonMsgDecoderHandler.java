@@ -2,9 +2,9 @@ package com.wb.newcode.micluster.handler;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.wb.newcode._02mi.pojo.ChatMsg;
-import com.wb.newcode._02mi.pojo.MsgType;
-import com.wb.newcode._02mi.pojo.User;
+import com.wb.newcode.mi.pojo.ChatMsg;
+import com.wb.newcode.mi.pojo.MsgType;
+import com.wb.newcode.mi.pojo.User;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 

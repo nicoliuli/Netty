@@ -1,8 +1,8 @@
 package com.wb.newcode.micluster.handler;
 
 import com.alibaba.fastjson.JSON;
-import com.wb.newcode._02mi.pojo.ChatMsg;
-import com.wb.newcode._02mi.pojo.MsgType;
+import com.wb.newcode.mi.pojo.ChatMsg;
+import com.wb.newcode.mi.pojo.MsgType;
 import com.wb.newcode.micluster.session.Redis;
 import com.wb.newcode.micluster.session.ServerSession;
 import com.wb.newcode.micluster.session.ServerSessionMap;

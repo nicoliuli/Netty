@@ -1,6 +1,6 @@
-package com.wb.newcode._02mi.handler;
+package com.wb.newcode.mi.handler;
 
-import com.wb.newcode._02mi.pojo.ChatMsg;
+import com.wb.newcode.mi.pojo.ChatMsg;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 

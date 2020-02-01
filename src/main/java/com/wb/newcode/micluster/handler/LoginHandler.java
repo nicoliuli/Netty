@@ -1,7 +1,7 @@
 package com.wb.newcode.micluster.handler;
 
-import com.wb.newcode._02mi.dao.UserDao;
-import com.wb.newcode._02mi.pojo.User;
+import com.wb.newcode.mi.dao.UserDao;
+import com.wb.newcode.mi.pojo.User;
 import com.wb.newcode.micluster.session.ServerSession;
 import com.wb.newcode.micluster.session.UserLoginMap;
 import io.netty.channel.ChannelHandlerContext;

@@ -1,8 +1,8 @@
-package com.wb.newcode._02mi.handler;
+package com.wb.newcode.mi.handler;
 
-import com.wb.newcode._02mi.dao.UserDao;
-import com.wb.newcode._02mi.pojo.User;
-import com.wb.newcode._02mi.session.ServerSession;
+import com.wb.newcode.mi.dao.UserDao;
+import com.wb.newcode.mi.pojo.User;
+import com.wb.newcode.mi.session.ServerSession;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 

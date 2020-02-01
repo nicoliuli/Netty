@@ -1,4 +1,4 @@
-package com.wb.newcode._02mi.session;
+package com.wb.newcode.mi.session;
 
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;

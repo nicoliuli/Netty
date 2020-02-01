@@ -1,4 +1,4 @@
-package com.wb.newcode._02mi.handler;
+package com.wb.newcode.mi.handler;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;

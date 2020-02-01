@@ -1,4 +1,4 @@
-package com.wb.newcode._02mi.pojo;
+package com.wb.newcode.mi.pojo;
 
 /**
  * 消息类型

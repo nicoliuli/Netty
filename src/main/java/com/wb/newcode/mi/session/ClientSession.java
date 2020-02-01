@@ -1,6 +1,6 @@
-package com.wb.newcode._02mi.session;
+package com.wb.newcode.mi.session;
 
-import com.wb.newcode._02mi.pojo.User;
+import com.wb.newcode.mi.pojo.User;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.util.AttributeKey;

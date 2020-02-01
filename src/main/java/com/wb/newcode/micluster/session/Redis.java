@@ -1,6 +1,6 @@
 package com.wb.newcode.micluster.session;
 
-import com.wb.newcode._02mi.pojo.ChatMsg;
+import com.wb.newcode.mi.pojo.ChatMsg;
 
 import java.util.concurrent.LinkedBlockingQueue;
 

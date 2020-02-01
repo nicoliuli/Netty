@@ -1,16 +1,12 @@
 package com.wb.newcode.micluster.client;
 
 import com.alibaba.fastjson.JSON;
-import com.wb.newcode._02mi.dao.UserDao;
-import com.wb.newcode._02mi.handler.ClientBisHandler;
-import com.wb.newcode._02mi.handler.JsonMsgDecoder;
-import com.wb.newcode._02mi.pojo.ChatMsg;
-import com.wb.newcode._02mi.pojo.MsgType;
-import com.wb.newcode._02mi.pojo.User;
+import com.wb.newcode.mi.dao.UserDao;
+import com.wb.newcode.mi.handler.ClientBisHandler;
+import com.wb.newcode.mi.pojo.ChatMsg;
+import com.wb.newcode.mi.pojo.MsgType;
+import com.wb.newcode.mi.pojo.User;
 import com.wb.newcode.micluster.handler.JsonMsgDecoderHandler;
-import com.wb.newcode.micluster.session.ServerSession;
-import com.wb.newcode.micluster.session.ServerSessionMap;
-import com.wb.newcode.micluster.session.UserLoginMap;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
