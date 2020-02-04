@@ -1,5 +1,7 @@
 package com.wb.newcode.http;
 
+import com.alibaba.fastjson.JSON;
+import com.wb.newcode.mi.pojo.User;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFutureListener;
@@ -15,13 +17,24 @@ public class HttpServerHandler extends ChannelInboundHandlerAdapter {
         if(msg instanceof FullHttpRequest){
             FullHttpRequest request = (FullHttpRequest) msg;
 
-            String s = request.uri();
 
-            FullHttpResponse response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1,HttpResponseStatus.OK);
-            ByteBuf buf = Unpooled.copiedBuffer(s.toString(), Charset.defaultCharset());
-            response.content().writeBytes(buf);
-            ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);
-
+            ctx.executor().execute(new Runnable() {
+                @Override
+                public void run() {
+                    User u = new User();
+                    u.setAge(10);u.setId(1);u.setMsgType(2);u.setName("张三");
+                    String s = JSON.toJSONString(u);
+                    FullHttpResponse response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1,HttpResponseStatus.OK);
+                    response.headers().set(HttpHeaders.Names.CONTENT_TYPE,"text/json;charset=UTF-8");
+                    ByteBuf buf = Unpooled.copiedBuffer(s, Charset.defaultCharset());
+                    response.content().writeBytes(buf);
+                    ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);
+                    ((FullHttpRequest) msg).release();
+                    //有可能不需要关闭也行
+                    ctx.channel().close();
+                    ctx.close();
+                }
+            });
         }
     }
 
