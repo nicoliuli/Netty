@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c955b992-1708-4e1d-ab58-3efeed51fdc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketbilibili/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketbilibili/MyWebSocketChannelHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketbilibili/MyWebSocketHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/MyWebSocketChannelHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/MyWebSocketChannelHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/MyWebSocketHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/MyWebSocketHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/NettyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/NettyConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/MoneyTypeEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/websocketimooc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/websocketimooc/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/websocketimooc/MyWebSocketHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/websocketimooc/MyWebSocketHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
