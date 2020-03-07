@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c955b992-1708-4e1d-ab58-3efeed51fdc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketbilibili/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketbilibili/MyWebSocketChannelHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketbilibili/MyWebSocketHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/MyWebSocketChannelHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/MyWebSocketChannelHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/MyWebSocketHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/MyWebSocketHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/NettyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketimooc/NettyConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wb/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/http/HttpServerHandler$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/http/HttpServerHandler$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/http/HttpServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/http/HttpServerHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/MoneyTypeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/websocketimooc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/websocketimooc/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/websocketimooc/MyWebSocketHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/websocketimooc/MyWebSocketHandler.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +51,7 @@
   </component>
   <component name="ProjectId" id="1WmKaYaMdieQTY0MLrH23Gzpwq4" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/session" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketbilibili" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -59,6 +66,7 @@
       <recent name="com.wb.newcode._02mi.manager" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/wb/newcode/websocketbilibili" />
       <recent name="$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/session" />
       <recent name="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json/handler" />
       <recent name="$PROJECT_DIR$/src/main/java/com/wb/newcode/_02json" />
@@ -76,26 +84,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wb.App" />
       <module name="netty" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.wb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Client1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wb.newcode.micluster.client.Client1" />
-      <module name="netty" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wb.newcode.micluster.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,12 +124,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wb.newcode.micluster.server.ServerManager" />
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.newcode.websocketimooc.Main" />
       <module name="netty" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wb.newcode.micluster.server.*" />
+          <option name="PATTERN" value="com.wb.newcode.websocketimooc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.newcode.websocketbilibili.Main" />
+      <module name="netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wb.newcode.websocketbilibili.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.HttpServer" />
         <item itemvalue="Application.Client2" />
-        <item itemvalue="Application.Client1" />
-        <item itemvalue="Application.ServerManager" />
       </list>
     </recent_temporary>
   </component>
