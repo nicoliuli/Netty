@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c955b992-1708-4e1d-ab58-3efeed51fdc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/zerocopy/BioClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/zerocopy/BioClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/zerocopy/NioClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/zerocopy/NioClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/zerocopy/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/zerocopy/Server.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,39 +79,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NioClient">
-    <configuration name="BioClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wb.newcode.zerocopy.BioClient" />
+  <component name="RunManager" selected="Application.EchoServer">
+    <configuration name="EchoServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.imnet.udp.EchoServer" />
       <module name="netty" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wb.newcode.zerocopy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wb.newcode.websocketimooc.Main" />
-      <module name="netty" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wb.newcode.websocketimooc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wb.newcode.websocketbilibili.Main" />
-      <module name="netty" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wb.newcode.websocketbilibili.*" />
+          <option name="PATTERN" value="com.wb.imnet.udp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,12 +106,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wb.newcode.zerocopy.Server" />
+    <configuration name="TimeClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.newcode._01.TimeClient" />
       <module name="netty" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wb.newcode.zerocopy.*" />
+          <option name="PATTERN" value="com.wb.newcode._01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.newcode._01.TimeServer" />
+      <module name="netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wb.newcode._01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UdpClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.imnet.udp.UdpClient" />
+      <module name="netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wb.imnet.udp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UdpClient" />
+        <item itemvalue="Application.EchoServer" />
+        <item itemvalue="Application.TimeClient" />
+        <item itemvalue="Application.TimeServer" />
         <item itemvalue="Application.NioClient" />
-        <item itemvalue="Application.BioClient" />
-        <item itemvalue="Application.Server" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -220,6 +223,10 @@
           <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.2.Final/netty-all-4.1.2.Final.jar!/io/netty/bootstrap/ServerBootstrap.class</url>
           <line>151</line>
           <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.2.Final/netty-all-4.1.2.Final.jar!/io/netty/channel/DefaultChannelPipeline.class</url>
+          <option name="timeStamp" value="199" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
