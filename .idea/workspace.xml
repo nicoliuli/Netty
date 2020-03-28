@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c955b992-1708-4e1d-ab58-3efeed51fdc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/zerocopy/BioClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/zerocopy/BioClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/zerocopy/NioClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/zerocopy/NioClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wb/newcode/zerocopy/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wb/newcode/zerocopy/Server.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +29,8 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/client/Client1.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/server/Server1.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/wb/newcode/micluster/server/Server2.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/wb/imnet/idle/TcpClient.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/wb/imnet/idle/Pinger.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -79,13 +78,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.EchoServer">
-    <configuration name="EchoServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wb.imnet.udp.EchoServer" />
+  <component name="RunManager" selected="Application.TcpClient">
+    <configuration name="TcpClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.imnet.idle.TcpClient" />
       <module name="netty" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wb.imnet.udp.*" />
+          <option name="PATTERN" value="com.wb.imnet.idle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NioClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wb.newcode.zerocopy.NioClient" />
+    <configuration name="TcpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.imnet.idle.TcpServer" />
       <module name="netty" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wb.newcode.zerocopy.*" />
+          <option name="PATTERN" value="com.wb.imnet.idle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TimeServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wb.newcode._01.TimeServer" />
+    <configuration name="UdpEchoClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.imnet.udp.UdpEchoClient" />
       <module name="netty" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wb.newcode._01.*" />
+          <option name="PATTERN" value="com.wb.imnet.udp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,8 +131,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UdpClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wb.imnet.udp.UdpClient" />
+    <configuration name="UdpEchoServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wb.imnet.udp.UdpEchoServer" />
       <module name="netty" />
       <extension name="coverage">
         <pattern>
@@ -147,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UdpClient" />
-        <item itemvalue="Application.EchoServer" />
+        <item itemvalue="Application.TcpClient" />
+        <item itemvalue="Application.TcpServer" />
+        <item itemvalue="Application.UdpEchoClient" />
+        <item itemvalue="Application.UdpEchoServer" />
         <item itemvalue="Application.TimeClient" />
-        <item itemvalue="Application.TimeServer" />
-        <item itemvalue="Application.NioClient" />
       </list>
     </recent_temporary>
   </component>
@@ -201,32 +200,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.2.Final/netty-all-4.1.2.Final.jar!/io/netty/bootstrap/ServerBootstrap.class</url>
-          <line>116</line>
-          <option name="timeStamp" value="194" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.2.Final/netty-all-4.1.2.Final.jar!/io/netty/bootstrap/ServerBootstrap.class</url>
-          <line>134</line>
-          <option name="timeStamp" value="195" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.2.Final/netty-all-4.1.2.Final.jar!/io/netty/bootstrap/ServerBootstrap.class</url>
-          <line>146</line>
-          <option name="timeStamp" value="196" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.2.Final/netty-all-4.1.2.Final.jar!/io/netty/bootstrap/ServerBootstrap.class</url>
-          <line>147</line>
-          <option name="timeStamp" value="197" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.2.Final/netty-all-4.1.2.Final.jar!/io/netty/bootstrap/ServerBootstrap.class</url>
           <line>151</line>
           <option name="timeStamp" value="198" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.2.Final/netty-all-4.1.2.Final.jar!/io/netty/channel/DefaultChannelPipeline.class</url>
           <option name="timeStamp" value="199" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wb/imnet/idle/ClientIdleStateTrigger.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="200" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
