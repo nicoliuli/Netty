@@ -20,8 +20,8 @@ public class MyWebSocketHandler extends SimpleChannelInboundHandler<TextWebSocke
 	@Override
 	protected void channelRead0(ChannelHandlerContext ctx, TextWebSocketFrame textWebSocketFrame) throws Exception {
 		System.out.println("收到的消息："+textWebSocketFrame.text());
-	//	ctx.channel().writeAndFlush(new TextWebSocketFrame("服务器时间："+ LocalDateTime.now()));
-		group.writeAndFlush(new TextWebSocketFrame("服务器时间："+ LocalDateTime.now()));//广播
+	//	ctx.channel().writeAndFlush(new TextWebSocketFrame(LocalDateTime.now()+" : " + textWebSocketFrame.text()));
+		group.writeAndFlush(new TextWebSocketFrame(LocalDateTime.now()+" : " + textWebSocketFrame.text()));//广播
 	}
 
 	@Override
