@@ -24,7 +24,6 @@ public class Main {
 			b.channel(NioServerSocketChannel.class);
 			b.childHandler(new MyWebSocketChannelHandler());
 			System.out.println("服务端开启等待客户端连接....");
-			b.bind(20880).sync();
 			ChannelFuture channelFuture = b.bind(8888).sync();
 			Channel channel = channelFuture.channel();
 			channel.closeFuture().sync();
